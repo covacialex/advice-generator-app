@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-neutral-darker);
+  font-family: var(--font-family);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  animation: slide-in 0.5s ease;
+  background-color: var(--color-neutral-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30rem;
+  gap: 2.6rem;
+  padding: 3.4rem 2.6rem 0 2.6rem;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+}
+.box__title {
+  color: var(--color-secondary);
+  font-size: var(--font-size-small);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.box__quote {
+  text-align: center;
+}
+.box__quote__text {
+  color: var(--color-primary);
+  font-size: var(--font-size-default);
+}
+.box__divider {
+  margin-top: 1rem;
+  max-width: 30rem;
+  height: auto;
+}
+.box__dice {
+  transform: translateY(2rem);
+  background-color: var(--color-secondary);
+  height: 4.6rem;
+  width: 4.6rem;
+  margin-top: -2.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.1s;
+}
+.box__dice:active {
+  box-shadow: 0 0 1.6rem var(--color-secondary);
+}
+.box__dice__image {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+:root {
+  --color-primary: hsl(193, 38%, 86%);
+  --color-secondary: hsl(150, 100%, 66%);
+  --color-neutral: hsl(217, 19%, 38%);
+  --color-neutral-dark: hsl(217, 19%, 24%);
+  --color-neutral-darker: hsl(218, 23%, 16%);
+  --font-size-small: 1rem;
+  --font-size-default: 1.8rem;
+  --font-family: "Manrope", sans-serif;
+  --font-weight: 800;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

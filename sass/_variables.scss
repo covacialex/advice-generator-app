@@ -1,0 +1,29 @@
+:root {
+  // Colors
+  --color-primary: hsl(193, 38%, 86%);
+  --color-secondary: hsl(150, 100%, 66%);
+
+  --color-neutral: hsl(217, 19%, 38%);
+  --color-neutral-dark: hsl(217, 19%, 24%);
+  --color-neutral-darker: hsl(218, 23%, 16%);
+
+  //   Font sizes
+  --font-size-small: 1rem;
+  --font-size-default: 1.8rem;
+
+  //   Font family
+  --font-family: "Manrope", sans-serif;
+
+  //   Font weight
+  --font-weight: 800;
+}
+
+// Animations
+@keyframes slide-in {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

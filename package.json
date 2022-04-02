@@ -1,0 +1,22 @@
+{
+  "name": "advice-generator-app-main",
+  "version": "1.0.0",
+  "description": "Front End Challenge",
+  "main": "js/index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/covacialex/advice-generator-app.git"
+  },
+  "author": "Covaci Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/covacialex/advice-generator-app/issues"
+  },
+  "homepage": "https://github.com/covacialex/advice-generator-app#readme",
+  "devDependencies": {
+    "sass": "^1.49.11"
+  }
+}
